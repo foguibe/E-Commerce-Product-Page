@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="product-zoom">
+            <div id="exit-zoom">
+                <img src="images/icon-close.svg" alt="close icon" id="exit">
+            </div>
+            <div class="image-container">
+                <img src="images/image-product-1.jpg" class="product" id="zoom-pic">
+            </div>
+            <div class="thumbnail-div">
+                <div class="thumbnail1-div1 thumbnail">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="product thumbnail">
+                </div>
+                <div class="thumbnail2-div thumbnail">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="product thumbnail">
+                </div>
+                <div class="thumbnail3-div thumbnail">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="product thumbnail">
+                </div>
+                <div class="thumbnail4-div thumbnail">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="product thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div id="logo-links">
+            <img src="images/icon-menu.svg" alt="menu-icon" id="menu">
+            <img id="logo" src="images/logo.svg" alt="logo icon">
+            <ul id="links">
+                <li class="collections">Collections</li>
+                <li class="men">Men</li>
+                <li class="women">Women</li>
+                <li class="about">About</li>
+                <li class="contact">Contact</li>
+            </ul>
+        </div>
+        <div id="cart-profile">
+            <div id="checkout">
+                <img src="images/icon-cart.svg" alt="cart logo" id="cart-logo">
+                <p id="cart-item-num">0</p>
+            </div>
+            <img src="images/image-avatar.png" alt="user photo" id="user-image">
+        </div>
+    </nav>
+    <div id="menu-overlay">
+        <div id="menu-div">
+            <div id="exit-div">
+                <img src="images/icon-close.svg" alt="delete-icon" id="exit-menu">
+            </div>
+            <ul id="menu-links">
+                <li class="collections">Collections</li>
+                <li class="men">Men</li>
+                <li class="women">Women</li>
+                <li class="about">About</li>
+                <li class="contact">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div id="product-div">
+            <div id="no-zoom">
+                <div class="image-container">
+                    <div class="previous-next previous">
+                        <img src="images/icon-previous.svg" alt="previous icon">
+                    </div>
+                    <div class="previous-next next">
+                        <img src="images/icon-next.svg" alt="next icon">
+                    </div>
+                    <img src="images/image-product-1.jpg" class="product" id="nozoom-pic">
+                </div>
+                <div class="thumbnail-div">
+                    <div class="thumbnail">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="product thumbnail" id="1.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="product thumbnail" id="2.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="product thumbnail" id="3.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="product thumbnail" id="4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="product-info">
+                <div id="info1">
+                    <p id="company-name">SNEAKER COMPANY</p>
+                    <h1 id="product-name">Fall Limited Edition Sneakers</h1>
+                </div>
+                <p id="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable outer sole, they'll withstand everything the weather can offer.</p>
+                <div id="discount-price">
+                    <div id="price-discount">
+                        <h2>$<span id="price">125.00</span></h2>
+                        <p id="after-discount"><s>$250.00</s></p>
+                    </div>
+                    <p id="discount-percentage">50%</p>
+                </div>
+                <div id="purchase">
+                    <div id="counter-button">
+                        <button id="decrease">-</button>
+                        <p id="item-number">0</p>
+                        <button id="increase">+</button>
+                    </div>
+                    <button id="cart">
+                        <img src="images/purchase-cart.svg">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="cart-info">
+        <p>Cart</p>
+        <div id="info-div">
+            <div id="empty">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cd">
+                <div id="cart-div">
+                    <img src="images/image-product-1-thumbnail.jpg" id="cart-img">
+                    <div id="name-total">
+                        <p id="name">Fall Limited Edition Sneakers</p>
+                        <p id="total">$<span id="pay">125.00</span> X <span id="amount"> 3 </span> <b style="color: black;">$</b><span id="result">375.00</span></p>
+                    </div>
+                    <img src="images/icon-delete.svg" id="item-delete">
+                </div>
+                <button id="_checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
