@@ -248,6 +248,9 @@ nav {
   height: 40px;
 }
 
+#user-image:hover {
+  border: 1.5px solid #ED7D31;
+
 #cart-item-num {
   margin-top: -5px;
   background-color: hsl(26, 100%, 55%);
