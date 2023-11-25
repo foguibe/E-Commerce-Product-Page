@@ -248,10 +248,6 @@ nav {
   height: 40px;
 }
 
-#user-image:active {
-  border: 1.5px solid #ED7D31;
-}
-
 #cart-item-num {
   margin-top: -5px;
   background-color: hsl(26, 100%, 55%);
@@ -342,7 +338,7 @@ nav {
 }
 
 #counter-button > p {
-  background-color: hsl(223, 64%, 93%);
+  background-color: #EFEFEF;
   align-self: center;
   height: 40px;
   display: flex;
